@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.container {
+    /* Tip. 가로 넓이를 주고 margin을 auto로 하면 중앙으로 정렬됨 */
+    width: 980px;
+    margin: auto;
+    /* background-color: red; */
+}
+
+.container-left {
+    /* padding과 margin을 사용할 때는 최적화를 위해서
+    부모의 클래스에 지정하는 거보다 하위 자식 클래스에 지정하는 것이 좋다 */
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+    margin-right: 5px;
+}
+
+/* 로고라는 클래스의 자식 요소인 img에만 적용 
+    태그 선택자와 클래스 선택자의 결합 방식
+*/
+.long img {
+    display: block;
+}
+
+.menu {
+    float: left;
+}
+
+.menu-item {
+    /* float 수평이 되도록 만들 수 있음 */
+    float: left; 
+    /* margin-right: 10px; */
+
+    /* 단축 속성의 띄어쓰기로 개별 속성을 지정해줌 */
+    padding: 8px 10px;
+    /* padding-top: 8px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
