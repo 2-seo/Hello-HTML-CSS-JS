@@ -1,3 +1,8 @@
+/* 
+    CSS 작성 순서는 
+    HTML에서 작성한 순서대로 작성해주는 것이 좋다
+*/
+
 body {
     margin: 0px;
     padding: 0px;

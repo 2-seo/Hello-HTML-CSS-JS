@@ -1,0 +1,64 @@
+header {
+    background-color: lightpink;
+    margin: 10px;
+    padding: 20px;
+}
+
+header nav {}
+
+header nav ul {
+    /* 수평으로 display 설정 */
+    display: flex;
+}
+
+header nav ul li {
+    /* list style clear */
+    list-style: none;
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    width: 70%;
+    background-color: tomato;
+    margin: 10px;
+    padding: 10px;
+    /* padding을 사용했을 때 박스 사이즈가 커지는 것을 막음 */
+    box-sizing: border-box;
+}
+
+section h1 {}
+
+article {
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+}
+
+article h2 {}
+
+article p {}
+
+aside {
+    background-color: blue;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: violet;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer address {}
+
+footer address a {
+    display: block;
+}
