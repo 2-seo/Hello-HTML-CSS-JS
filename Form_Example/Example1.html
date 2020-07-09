@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Example1.css">
+</head>
+
+<body>
+    <p>form이란 웹서버에 정보를 제출하기 위한 양식 범위를 정의</p>
+    <table>
+        <thead>
+            <tr>
+                <th>속성</th>
+                <th>의미</th>
+                <th>값</th>
+                <th>기본값</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>action</td>
+                <td>전송할 정보를 처리할 웹페이지의 URL</td>
+                <td>URL</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>사용자가 이전에 입력한 값으로 자동 완성 기능을 사용할 것인지 여부</td>
+                <td>on, off</td>
+                <td>on</td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>서버로 전속할 HTTP 방식</td>
+                <td>GET, POST</td>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>고유한 양식의 이름</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>novalidate</td>
+                <td>서버로 전송시 양식데이터의 유효성을 검사하지 않도록 지정</td>
+                <td>URL</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>서버로 전송후 응답 받을 방식을 지정</td>
+                <td>_self, _blank</td>
+                <td>_self</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="section">
+        <p>readonly: <input type="number" value="1234" readonly> 나는 읽기 전용!</p>
+        <p>disabled: <input type="number" value="1234" disabled> 나는 터치도 불가!</p>
+        <p>placeholder: <input type="number" placeholder="숫자를 입력하시오"> 나는 힌트를 보여줌!</p>
+        <p>max: <input type="number" max="10"> 최대값을 지정!</p>
+        <p>min: <input type="number" min="1"> 최소값을 지정!</p>
+        <p>file: <input type="file" multiple> file을 1개 이상 받음</p>
+        <p>
+            radio:
+            <input type="radio" name="radioName" checked> 선택1
+            <input type="radio" name="radioName"> 선택2
+            <input type="radio" name="radioName"> 선택3
+        </p>
+        <p>
+            checkbox:
+            <label><input type="checkbox">동의1</label>
+
+            <input type="checkobx" id="user_aggrement">
+            <label for="user_aggrement">동의하십니까?</label>
+        </p>
+        <form action="/login" method="GET">
+            <input type="email" name="email">
+            <input type="password" name="password">
+            <!-- <button>Login</button> -->
+            <input type="submit" value="로그인">
+            <input type="reset" value="초기화">
+        </form>
+        <p>
+            textarea: <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="설명을 입력하세요!"></textarea>
+        </p>
+    </div>
+</body>
+
+</html>
