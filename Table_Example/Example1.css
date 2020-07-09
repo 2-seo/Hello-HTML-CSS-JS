@@ -1,0 +1,14 @@
+table {
+    border: 1px solid black;
+    /* 테이블 셀 별 칸 간격 띄우지 않기 */
+    border-collapse: collapse;
+}
+
+th {
+    border: black 1px solid;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
