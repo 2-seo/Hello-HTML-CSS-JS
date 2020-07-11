@@ -1,0 +1,21 @@
+body * {
+    border: 2px solid;
+}
+
+/*
+    px, %: 부모의 크기에 영향을 받음 
+*/
+
+.container {
+    width: 600px;
+}
+
+.parents {
+    /* width: 300px; */
+    width: 50%;
+}
+
+.child {
+    /* width: 150px; */
+    width: 50%;
+}
