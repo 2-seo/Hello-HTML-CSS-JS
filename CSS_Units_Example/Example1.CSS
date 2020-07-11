@@ -3,19 +3,36 @@ body * {
 }
 
 /*
+    최상위 조상요소는 HTML태그
+
     px, %: 부모의 크기에 영향을 받음 
+    em: font size에 영향을 받음
+    rem: html의 단위의 영향을 받음
 */
 
 .container {
-    width: 600px;
+    /* width: 600px; */
+
+    width: 60em; /* = 600px */
+    font-size: 10px;
 }
 
 .parents {
     /* width: 300px; */
-    width: 50%;
+    /* width: 50%; */
+
+    /* font는 상속을 받음 따라서 자식 요소 또한
+    부모의 폰트 사이즈의 영향을 받음 */
+    width: 30em; /* = 300px */
+    /* 부모(container)의 폰트사이즈에 영향을 받아 2배로 커짐 */
+    font-size: 2em; /* 20px */
 }
 
 .child {
     /* width: 150px; */
-    width: 50%;
+    /* width: 50%; */
+
+    width: 15em;
+    font-style: 2em;
+
 }
