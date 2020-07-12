@@ -8,6 +8,10 @@ body * {
     px, %: 부모의 크기에 영향을 받음 
     em: font size에 영향을 받음
     rem: html의 단위의 영향을 받음
+    vw: view port with
+    vh: view port height
+    vn: view port Min - view port에 짧은 쪽에 길이를 맞춤
+    vm: view port Max - view port에 긴 쪽에 길이를 맞춤
 */
 
 .container {
