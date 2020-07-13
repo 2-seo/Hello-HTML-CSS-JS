@@ -16,4 +16,9 @@
     padding을 사용하면 크기가 커짐!
     따라서 계산을 따로 해주거나!
     자동으로 맞춰주는 box-sizing: boarder-box 를 이용하면 됨
+
+    border: 두께 종류 색상
+        border-width: 선 두께
+        boarder-style
+        boarder-color
 */
