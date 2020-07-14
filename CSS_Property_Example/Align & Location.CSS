@@ -1,0 +1,32 @@
+/*
+    float: 요소를 좌우 방향으로 띄움(수평 정렬)
+        float이 있는 요소들과 float이 없는 요소는 형제로 두지 말자!
+        속성 값
+            none, left, right
+        중간에 흐름을 단순 해제하는 방법(float을 해제)
+            clear: left or right or both
+            both를 주로 사용함
+
+        부모 요소에서 해제 (추천)
+            float 속성이 추가된 요소의 부모요소에 미리 지정된
+            clearfix 클래스 추가
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: block; //or table
+            }
+    
+    display 수정
+        float 속성이 추가된 요소는 display 속성의 값이 대부분 block으로 수정됨
+
+    position
+        요소의 위치 지정 방법의 유형(기준)을 설정
+        속성 값
+            static(기본값): 기준 없음 / 배치 불가능
+            relative: 요소 자신을 기준으로 배치
+            absolute: 위치 상 부모 요소를 기준으로 배치 (부모에 position 속성이 있어야함)
+            fixed: 뷰포트를 기준으로 배치
+            sticky: 스크롤 영역 기중으로 배치 (IE 지원 안함)
+    
+    top, bottom, left, right
+*/

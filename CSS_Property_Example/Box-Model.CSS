@@ -5,6 +5,7 @@
     min-width
     max-heihgt
     min-height
+    opacity: 투명도
 
     margin
     margin 중복 현상
@@ -21,4 +22,20 @@
         border-width: 선 두께
         boarder-style
         boarder-color
+
+    display
+        값 종류
+            block
+            inline
+            inline-block: width와 height 값을 가질 수 있고, margin과 padding의 위 아래 값을 가질 수 잇음
+            none
+            ...
+
+    overflow: 부모 요소에 적용해야함
+        요소의 크기 이상으로 내용이 넘쳤을 때, 내용의 보여짐을 제어
+        값 종류
+            visible: 넘친 부분을 자르지 않고 그대로 보여줌
+            hidden: 넘친 부분을 잘라내고, 보이지 않도록 함
+            scroll: 넘친 부분을 잘라내고, 스크롤바를 이용하여 보여지도록 함(강제: 무조건 스크롤바)
+            auto: 넘친 경우가 있을 경우에만 잘라내고, 스크롤바를 이용하여 보여지도록 함(자동)
 */

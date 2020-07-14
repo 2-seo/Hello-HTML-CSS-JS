@@ -1,0 +1,19 @@
+/*
+    font: 기울기 두께 크기 / 줄높이 글꼴;
+        단축속성을 사용하려면 크기와 글꼴을 필수로 입력해야한다.
+        font-style: 기울기 지정
+        font-weight: 글자 두께, 100~900까지의 100단위의 숫자 9개
+        font-size: 글자 크기
+        font-family: 글꼴후보1, 후보2, 후보3, 글꼴계열(serif, sans-serif, monospace, cursive, fantasy)
+        line-height: resect.css 적용시 1 / 1.4 ~ 1.7 적당
+
+    text 관련 속성
+        color
+        text-align: 정렬 / left, right, center, justify(양쪽 정렬, 2줄 이상일 때)
+        text-indent: 들여쓰기를 지정
+            음수값을 사용하면 첫째 줄은 왼쪽을 들여쓰기(내어쓰기) 된다.
+        text-decoration: 문자의 line을 설정
+            속성 값: none, underline, overline, line-throught
+        letter-spacing: 문자 사이의 간격(자간)
+        word-spacing: 단어 사이(띄어쓰기)의 간격
+*/
