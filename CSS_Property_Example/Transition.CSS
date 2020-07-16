@@ -1,0 +1,14 @@
+/*
+    transition
+        CSS 속성의 시작과 끝을 지정(전환 효과)하여 중간 값을 애니메이션
+        바뀌기 전 상태의 요소에 작성한다.
+        transition-property
+            전환 효과를 사용할 속성 이름
+        transition-duration
+            전환 효과의 지속시간 설정(s)
+        transition-timing-function
+            타이밍 함수 지정(천천히 ~ 빠르게 or 빠르게 ~ 천천히)
+        transition-transition-delay
+            전환효과의 대기시간 설정(s)
+                easings.net/ko 참고
+*/

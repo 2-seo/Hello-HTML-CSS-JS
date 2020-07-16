@@ -1,0 +1,29 @@
+/*
+    transform    
+    요소의 변환 효과(변형)를 지정
+    transition을 이용하기에 최적화됨
+    
+    이동
+    translate(x, y)
+    translateX(x)
+    translateY(y)
+
+    크기(배수): 확대 축소
+    scale(x,y)
+    scaleX(x)
+    scaleY(y)
+    
+    회전
+    rotate(degr)
+
+    비틀기
+    skew(x-deg, y-deg)
+    skewX(x-deg)
+    skewY(y-deg)
+    
+    matrix(n, n, n, n, n, n): 2차원 변환 효과
+
+    ex)
+        transform: translate(100px, 40px)
+        transform: 
+*/

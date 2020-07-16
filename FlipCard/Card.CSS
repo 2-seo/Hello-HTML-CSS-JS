@@ -1,0 +1,47 @@
+.cards {
+    
+}
+
+.card {
+    width: 180px;
+    height: 260px;
+    position: relative;
+    perspective: 500px;
+}
+
+.card .face {
+    width: 180px;
+    height: 260px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.card .face-front {
+    transform: rotateY(0deg);
+}
+
+.card:active .face-front {
+    transform: rotateY(180deg);
+}
+
+.card:active .face-back {
+    transform: rotateY(0deg);
+}
+
+.card .face-back {
+    transform: rotateY(-180deg);
+}
+
+.card .face-front img {
+    width: 100px;
+}
+
+.card .face-back img {
+    width: 140px;
+}
