@@ -7,6 +7,12 @@
     height: 260px;
     position: relative;
     perspective: 500px;
+    margin: 15px;
+    float: left;
+}
+
+.card:last-child {
+    margin-right: 0px;
 }
 
 .card .face {
