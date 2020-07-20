@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <p>animation-name</p>
+    <table>
+        <thead>
+            <tr>
+                <th>값</th>
+                <th>의미</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@keyframes 이름</td>
+                <td>이름이 일치하는 @keyframes규칙의 애니메이션을 적용</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>animation-timing-function</p>
+    <table>
+        <thead>
+            <tr>
+                <th>값</th>
+                <th>의미</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>ease</td>
+            <td>빠르게-느리게</td>
+        </tr>
+        <tr>
+            <td>linear</td>
+            <td>일정하게</td>
+        </tr>
+        <tr>
+            <td>ease-in</td>
+            <td>느리게-빠르게</td>
+        </tr>
+        <tr>
+            <td>ease-out</td>
+            <td>빠르게-느리게</td>
+        </tr>
+        <tr>
+            <td>ease-in-out</td>
+            <td>느리게-빠르게-느리게</td>
+        </tr>
+        <tr>
+            <td>cubic-bezier(n,n,n,n)</td>
+            <td>사용자 정의</td>
+        </tr>
+    </table>
+    
+    <p>animation-delay</p>
+    <table>
+        <thead>
+            <tr>
+                <td>값</td>
+                <td>의미</td>
+                <td>기본값</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>시간</td>
+                <td>대기시간을 의미</td>
+                <td>0s</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>animation-iteration: 애니매이션의 반복 횟수를 설정</p>
+    <table>
+        <thead>
+            <tr>
+                <td>값</td>
+                <td>의미</td>
+                <td>기본값</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>숫자</td>
+                <td>반복 횟수 설정</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>infinite</td>
+                <td>무한 반복</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>animation-diretion: 애니매이션의 반복 방향을 설정</p>
+    <table>
+        <thead>
+            <tr>
+                <td>값</td>
+                <td>의미</td>
+                <td>기본값</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>normal</td>
+                <td>정방향만 반복</td>
+                <td>normal</td>
+            </tr>
+            <tr>
+                <td>reverse</td>
+                <td>역방향만 반복</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>alternate</td>
+                <td>정방향에서 역방향으로 반복(왕복)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>alternate-reverse</td>
+                <td>역방향에서 정방향으로 반복</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>animation-fill-mode: 애니매이션의 전후 상태(위치) 설정</p>
+    <table>
+        <thead>
+            <tr>
+                <td>값</td>
+                <td>의미</td>
+                <td>기본값</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>none</td>
+                <td>기존 위치에서 시작 -> 애니매이션 시작위치로 이동 -> 동작 -> 기존 위치에서 종료</td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>forwards</td>
+                <td>기존 위치에서 시작 -> 애니매이션 시작위치로 이동 -> 동작 -> 애니메이션 끝 위치에서 종료</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>backwards</td>
+                <td>애니메이션 시작 위치에서 시작 -> 동작 -> 기존 위치에서 종료</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>both</td>
+                <td>애니메이션 시작 위치에서 시작 -> 동작 -> 애니메이션 끝 위치에서 종료</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
