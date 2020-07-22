@@ -1,3 +1,23 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+}
+
+.box:hover {
+    animation: box-size 2s ease-in-out infinite alternate;
+}
+
+@keyframes box-size {
+    0% {
+
+    }
+    100% {
+        width: 400px;
+        background-color: cornflowerblue;
+    }
+}
+
 table {
     border: 1px solid black;
     border-collapse: collapse;
