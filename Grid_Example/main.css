@@ -1,0 +1,26 @@
+header {
+    border-bottom: 1px solid black;
+    background: rgba(255, 255, 255, .95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-container {
+    padding: 10px 20px;
+}
+
+.header-container .home-link {
+    align-items: center;
+    padding-right: 10px;
+    float: left;
+}
+
+.header-container .current-post-title {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+}
