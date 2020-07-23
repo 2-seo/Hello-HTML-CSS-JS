@@ -11,10 +11,22 @@ header {
     padding: 10px 20px;
 }
 
+.header-container a {
+    text-decoration: none;
+}
+
 .header-container .home-link {
+    display: flex;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 20px;
     float: left;
+}
+
+.header-container .home-link .logo {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    background-color: orange;
 }
 
 .header-container .current-post-title {
@@ -22,5 +34,11 @@ header {
     align-items: center;
     height: 40px;
     line-height: 1.2;
+    font-size: 14px;
     font-weight: 700;
+}
+
+.article-banner {
+    padding: 100px 30px 25px;
+    text-align: center;
 }
