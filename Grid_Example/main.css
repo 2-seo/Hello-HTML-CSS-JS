@@ -1,4 +1,4 @@
-header {
+.header-fixed {
     border-bottom: 1px solid black;
     background: rgba(255, 255, 255, .95);
     position: fixed;
@@ -9,17 +9,24 @@ header {
 
 .header-container {
     padding: 10px 20px;
+    display: flex;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    /* display: block; */
 }
 
 .header-container a {
     text-decoration: none;
+    /* float: left; */
 }
 
 .header-container .home-link {
     display: flex;
     align-items: center;
     padding-right: 20px;
-    float: left;
 }
 
 .header-container .home-link .logo {
@@ -39,6 +46,7 @@ header {
 }
 
 .article-banner {
+    clear: both;
     padding: 100px 30px 25px;
     text-align: center;
 }
