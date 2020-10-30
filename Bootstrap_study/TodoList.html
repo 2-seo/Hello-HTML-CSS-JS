@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <header class="bg-secondary">
+            <h1 class="ml-3">Todo list</h1>
+        </header>
+        <div class="myForm d-flex justify-content-center">
+            <form action="#">
+                <div class="form-inline">
+                    <label for="txtTodo" class="mr-3">Input Todo: </label>
+                    <input type="text" id="txtTodo" class="mr-3 form-control">
+                    <button type="button" id="btnAdd" class="btn btn-primary">ADD</button>
+                </div>
+            </form>
+        </div>
+        <div class="todoList d-flex"></div>
+    </div>
+
+    <script>
+        $(() => {
+            $('#btnAdd').click(() => {
+                let todo = $('#txtTodo').val();
+                if (todo != '') {
+                    $('.todoList').after(
+                        '<div class="d-flex justify-content-center mt-3"><span class="todo">' +
+                        todo + '</span></div>');
+                    $('.todo:last-child').after(
+                        '<button type="button" id="btnRemove" class="btn btn-primary ml-3">Done</button>'
+                        );
+                        $('#btnRemove').click(function() {
+                            $(this).parent().remove();
+                        });
+                }
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

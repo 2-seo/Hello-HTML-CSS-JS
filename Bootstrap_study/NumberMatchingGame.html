@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Number matching game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-end mb-3">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <h1>번호 맞추기 게임</h1>
+        </div>
+        <div class="miniGame d-flex justify-content-center">
+            <form action="#">
+                <div class="form-inline">
+                    <label for="num1" class="mr-2">Input number: </label>
+                    <input type="text" name="" id="num1" class="form-control mr-2">
+                    <button type="button" class="btn btn-primary">확인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        $(() => {
+            let userNumber;
+            let answer = 10;
+            let alertFailMsg =
+                '<div class="alert alert-danger mt-3">' +
+                '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                '<strong>fail!</strong> 정답보다 숫자가 큽니다.' +
+                '</div>';
+            let alertSuccessMsg =
+                '<div class="alert alert-success mt-3">' +
+                '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                '<strong>fail!</strong> 정답입니다.' +
+                '</div>';
+
+            $('button').eq(0).click(() => {
+                userNumber = parseInt($('input#num1').val());
+
+                if (userNumber > answer) {                    
+                    $(alertFailMsg).insertAfter('.miniGame');
+                } else if (userNumber === answer) {
+                    $(alertSuccessMsg).insertAfter('.miniGame');
+                } else {
+
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>
